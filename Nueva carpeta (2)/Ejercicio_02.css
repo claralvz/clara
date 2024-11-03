@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Amor Precioso</title>
+    <style>
+        /* Fondo de la página con imágenes de corazones */
+        body {
+            background-color: #282c34; /* Color de fondo oscuro */
+            background-image: url('6782784.png'); /* URL de ejemplo para un patrón de corazones */
+            background-size: contain;
+            background-repeat: repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 4em;
+            color: #fff; /* Color inicial */
+            animation: fadeIn 2s ease-in-out, bounce 2s infinite; /* Animaciones combinadas */
+            text-shadow: 2px 2px 5px #ff69b4; /* Sombra de texto */
+        }
+
+        /* Animación para hacer que el texto aparezca suavemente */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animación de rebote */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-30px);
+            }
+        }
+
+        /* Animación de cambio de color */
+        @keyframes colorChange {
+            0% {
+                color: #ff0000; /* Rojo */
+            }
+            25% {
+                color: #ff69b4; /* Rosa */
+            }
+            50% {
+                color: #ffcc00; /* Amarillo */
+            }
+            75% {
+                color: #66ccff; /* Azul claro */
+            }
+            100% {
+                color: #ff0000; /* Rojo */
+            }
+        }
+
+        /* Añadiendo el efecto de hover */
+        h1:hover {
+            animation: colorChange 1.5s infinite alternate; /* Cambia de color al pasar el mouse */
+            transform: scale(1.2); /* Aumenta el tamaño al pasar el mouse */
+            cursor: pointer; /* Cambia el cursor al pasar sobre el texto */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="animatedText">MI AMOR PRECIOSO</h1>
+    </div>
+</body>
+</html>
